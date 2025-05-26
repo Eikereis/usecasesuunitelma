@@ -12,7 +12,7 @@ Ne ovat
 6. Uusi Äänestys
 
 
-
-
-
-
+Selaa Äänestykessä, käyttäjä pystyy Selamaan eri äänestyksiä, mitä ylläpitäjät ovat tehneet. Tapauksen pystyy käyttää käyttäjä ja ylläpitäjä. 
+-----------------
+Valitse äänestyksessä käyttäjä valitsee äänestyksen selaillusta. Äänestämiseen käyttäjä pitää painaa haluavan äänestyksen.
+-----------------
