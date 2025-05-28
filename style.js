@@ -1,8 +1,8 @@
 const polls = [
-    { name: "Fastfood", description: "Hamburger or Pizza", votesFor: 0, votesAgainst: 0 },
-    { name: "Beginner Programming", description: "JavaScript or Python", votesFor: 0, votesAgainst: 0 },
-    { name: "Michael", description: "Jordan or Jackson", votesFor: 0, votesAgainst: 0 },
-    { name: "", description: "", votesFor: 0, votesAgainst: 0 },
+    { name: "Fastfood", description: "Is hamburger better than pizza", votesFor: 0, votesAgainst: 0 },
+    { name: "Beginner Programming", description: "JavaScript is better than python", votesFor: 0, votesAgainst: 0 },
+    { name: "School", description: "More Homework", votesFor: 0, votesAgainst: 0 },
+    { name: "", description: "Lorem Ipsum Dolor Sit Amet", votesFor: 0, votesAgainst: 0 },
 ];
 
 document.getElementById("register-button").addEventListener("click", registerUser);
@@ -18,11 +18,11 @@ function registerUser() {
     if (username && password) {
         const role = document.querySelector('input[name="role"]:checked').value;
         users.push({ username, password, role });
-        alert("Registration successful!");
+        alert("Registration successful! You can now log in.");
         document.getElementById("registration-username").value = "";
         document.getElementById("registration-password").value = "";
     } else {
-        alert("Username and password are required.");
+        alert("Username & Password Required.");
     }
 }
 
@@ -44,7 +44,7 @@ function loginUser() {
             document.getElementById("moderator-section").style.display = "block";
         }
     } else {
-        alert("Invalid username or password.");
+        alert("Invalid username and or password.");
     }
 }
 
@@ -106,19 +106,19 @@ document.getElementById("vote-against").addEventListener("click", voteAgainst);
 displayPolls();
 
 function createPoll() {
-    const pollName = prompt("Enter poll name (max 15 characters):");
-    const pollDescription = prompt("Enter poll description:");
+    const pollName = prompt("Enter poll name: ");
+    const pollDescription = prompt("Enter poll description: ");
 
     if (pollName && pollName.length <= 15 && pollDescription) {
         polls.push({ name: pollName, description: pollDescription, votesFor: 0, votesAgainst: 0 });
         displayPolls();
     } else {
-        alert("Poll name must be non-empty and 15 characters or less.");
+        alert("Poll name must not be empty and must be less than 15 characters.");
     }
 }
 
 function deletePoll() {
-    const index = prompt("Enter the number of the poll to delete:");
+    const index = prompt("Enter the number of the poll to delete: (earliest poll is 1)");
     if (index - 1 >= 0 && index - 1 < polls.length) {
         polls.splice(index - 1, 1);
         displayPolls();

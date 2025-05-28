@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    margin: 0;
+    color: #e0e0e0;
+}
+
+.header {
+    background: #5e0059;
+    text-align: center;
+    padding: 5px 5px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.user-buttons {
+    margin-bottom: 25px;
+}
+
+button {
+    margin: 5px;
+}
+
+#moderator-section,
+#poll-details,
+.hidden {
+    display: none;
+}
+
+#poll-description {
+    font-style: italic;
+    color: #aaa;
+}
+
+#poll-list {
+    text-align: left;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+#poll-list li {
+    background-color: #2a2a2a;
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.all-buttons {
+    width: 120px;
+    height: 45px;
+    background: linear-gradient(to right, #8443ce, #185a9d);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.all-buttons:hover {
+    background: linear-gradient(to right, #8443ce, #0f3443);
+    transform: scale(1.05);
+}
+
+#normal-role,
+#moderator-role {
+    margin: 15px 10px 10px 0;
+    display: inline-block;
+}
+
+#login-username,
+#registration-username,
+#registration-password,
+#login-password {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+    border-radius: 5px;
+}
