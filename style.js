@@ -2,7 +2,7 @@ const polls = [
     { name: "Fastfood", description: "Is hamburger better than pizza", votesFor: 0, votesAgainst: 0 },
     { name: "Beginner Programming", description: "JavaScript is better than python", votesFor: 0, votesAgainst: 0 },
     { name: "School", description: "More Homework", votesFor: 0, votesAgainst: 0 },
-    { name: "", description: "Lorem Ipsum Dolor Sit Amet", votesFor: 0, votesAgainst: 0 },
+    { name: "testi", description: "Lorem Ipsum Dolor Sit Amet", votesFor: 0, votesAgainst: 0 },
 ];
 
 document.getElementById("register-button").addEventListener("click", registerUser);
